@@ -10,7 +10,7 @@
 		15C80D07BB86D426D538DDF6 /* libPods-Represent.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 32122BB8D2C6C652672C8772 /* libPods-Represent.a */; };
 		EEEC41551B22503F00D0D270 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = EEEC41541B22503F00D0D270 /* main.m */; };
 		EEEC41581B22503F00D0D270 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = EEEC41571B22503F00D0D270 /* AppDelegate.m */; };
-		EEEC415B1B22503F00D0D270 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EEEC415A1B22503F00D0D270 /* ViewController.m */; };
+		EEEC415B1B22503F00D0D270 /* DetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EEEC415A1B22503F00D0D270 /* DetailViewController.m */; };
 		EEEC415E1B22503F00D0D270 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EEEC415C1B22503F00D0D270 /* Main.storyboard */; };
 		EEEC41601B22503F00D0D270 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EEEC415F1B22503F00D0D270 /* Images.xcassets */; };
 		EEEC41631B22503F00D0D270 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = EEEC41611B22503F00D0D270 /* LaunchScreen.xib */; };
@@ -18,6 +18,9 @@
 		EEEC417A1B22509B00D0D270 /* NetworkController.m in Sources */ = {isa = PBXBuildFile; fileRef = EEEC41791B22509B00D0D270 /* NetworkController.m */; };
 		EEEC417D1B2254E000D0D270 /* CongressMemberController.m in Sources */ = {isa = PBXBuildFile; fileRef = EEEC417C1B2254E000D0D270 /* CongressMemberController.m */; };
 		EEEC41801B2254EF00D0D270 /* CongressMember.m in Sources */ = {isa = PBXBuildFile; fileRef = EEEC417F1B2254EF00D0D270 /* CongressMember.m */; };
+		EEEC41821B22738500D0D270 /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EEEC41811B22738500D0D270 /* MobileCoreServices.framework */; };
+		EEEC41841B23591600D0D270 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EEEC41831B23591600D0D270 /* CoreLocation.framework */; };
+		EEEC41871B23774D00D0D270 /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EEEC41861B23774D00D0D270 /* MainViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,8 +41,8 @@
 		EEEC41541B22503F00D0D270 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		EEEC41561B22503F00D0D270 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		EEEC41571B22503F00D0D270 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		EEEC41591B22503F00D0D270 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		EEEC415A1B22503F00D0D270 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		EEEC41591B22503F00D0D270 /* DetailViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DetailViewController.h; sourceTree = "<group>"; };
+		EEEC415A1B22503F00D0D270 /* DetailViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DetailViewController.m; sourceTree = "<group>"; };
 		EEEC415D1B22503F00D0D270 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		EEEC415F1B22503F00D0D270 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		EEEC41621B22503F00D0D270 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
@@ -52,6 +55,10 @@
 		EEEC417C1B2254E000D0D270 /* CongressMemberController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CongressMemberController.m; sourceTree = "<group>"; };
 		EEEC417E1B2254EF00D0D270 /* CongressMember.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CongressMember.h; sourceTree = "<group>"; };
 		EEEC417F1B2254EF00D0D270 /* CongressMember.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CongressMember.m; sourceTree = "<group>"; };
+		EEEC41811B22738500D0D270 /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
+		EEEC41831B23591600D0D270 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		EEEC41851B23774D00D0D270 /* MainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainViewController.h; sourceTree = "<group>"; };
+		EEEC41861B23774D00D0D270 /* MainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainViewController.m; sourceTree = "<group>"; };
 		F464ABE671A3CA288DA00488 /* Pods-Represent.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Represent.release.xcconfig"; path = "Pods/Target Support Files/Pods-Represent/Pods-Represent.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -60,6 +67,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EEEC41841B23591600D0D270 /* CoreLocation.framework in Frameworks */,
+				EEEC41821B22738500D0D270 /* MobileCoreServices.framework in Frameworks */,
 				15C80D07BB86D426D538DDF6 /* libPods-Represent.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -86,6 +95,8 @@
 		4EB570B9553E30CE949D77CA /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				EEEC41831B23591600D0D270 /* CoreLocation.framework */,
+				EEEC41811B22738500D0D270 /* MobileCoreServices.framework */,
 				32122BB8D2C6C652672C8772 /* libPods-Represent.a */,
 			);
 			name = Frameworks;
@@ -116,8 +127,10 @@
 			children = (
 				EEEC41561B22503F00D0D270 /* AppDelegate.h */,
 				EEEC41571B22503F00D0D270 /* AppDelegate.m */,
-				EEEC41591B22503F00D0D270 /* ViewController.h */,
-				EEEC415A1B22503F00D0D270 /* ViewController.m */,
+				EEEC41851B23774D00D0D270 /* MainViewController.h */,
+				EEEC41861B23774D00D0D270 /* MainViewController.m */,
+				EEEC41591B22503F00D0D270 /* DetailViewController.h */,
+				EEEC415A1B22503F00D0D270 /* DetailViewController.m */,
 				EEEC41781B22509B00D0D270 /* NetworkController.h */,
 				EEEC41791B22509B00D0D270 /* NetworkController.m */,
 				EEEC417B1B2254E000D0D270 /* CongressMemberController.h */,
@@ -294,9 +307,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				EEEC417A1B22509B00D0D270 /* NetworkController.m in Sources */,
-				EEEC415B1B22503F00D0D270 /* ViewController.m in Sources */,
+				EEEC415B1B22503F00D0D270 /* DetailViewController.m in Sources */,
 				EEEC41581B22503F00D0D270 /* AppDelegate.m in Sources */,
 				EEEC41551B22503F00D0D270 /* main.m in Sources */,
+				EEEC41871B23774D00D0D270 /* MainViewController.m in Sources */,
 				EEEC417D1B2254E000D0D270 /* CongressMemberController.m in Sources */,
 				EEEC41801B2254EF00D0D270 /* CongressMember.m in Sources */,
 			);
