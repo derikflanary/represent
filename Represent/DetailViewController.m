@@ -20,6 +20,7 @@
 @property (nonatomic, strong) NSArray *dataArray;
 @property (nonatomic, strong) NSString *zipcode;
 @property (nonatomic, strong) CLLocationManager *locationManager;
+@property (nonatomic, strong) NSString *link;
 
 @end
 
@@ -35,11 +36,6 @@
     [self.tableView registerClass:[UITableViewCell class] forCellReuseIdentifier:@"cell"];
     
     [self.view addSubview:self.tableView];
-    
-    [[CongressMemberController SharedInstance] repsByZip:@"84003" callback:^(NSMutableArray *repsArray) {
-        self.dataArray = repsArray;
-        [self.tableView reloadData];
-    }];
     
     // Do any additional setup after loading the view, typically from a nib.
 }
@@ -82,13 +78,11 @@
          {
              CLPlacemark *placemark = [placemarks objectAtIndex:0];
              self.zipcode = placemark.postalCode;
-//             NSLog(@"\nCurrent Location Detected\n");
-//             NSLog(@"placemark %@",placemark);
-             NSString *locatedAt = [[placemark.addressDictionary valueForKey:@"FormattedAddressLines"] componentsJoinedByString:@", "];
-             
-             NSString *address = [[NSString alloc]initWithString:locatedAt];
-             NSString *ipcode = [[NSString alloc]initWithString:placemark.postalCode];
-             NSLog(@"%@", ipcode);
+             self.title = self.zipcode;
+             [[CongressMemberController SharedInstance] repsByZip:self.zipcode callback:^(NSMutableArray *repsArray) {
+                 self.dataArray = repsArray;
+                 [self.tableView reloadData];
+             }];
          }
          else
          {
@@ -153,9 +147,20 @@
         cell.textLabel.text = congressMember.officeAddress;
     }else{
         cell.textLabel.text = congressMember.link;
+        self.link = congressMember.link;
     }
     
     return cell;
+}
+
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
+    if (indexPath.section == 6) {
+        NSURL *url = [NSURL URLWithString:self.link];
+        
+        if (![[UIApplication sharedApplication] openURL:url]) {
+            NSLog(@"%@%@",@"Failed to open url:",[url description]);
+        }
+    }
 }
 
 

@@ -57,6 +57,12 @@
         cell = [UITableViewCell new];
     }
     
+    if (indexPath.section == 0) {
+        @"Search by zip code";
+    }else{
+        cell.textLabel.text = @"Search by current location";
+    }
+    
     return cell;
 }
 
